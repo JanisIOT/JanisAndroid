@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="http://www.uncuartotech.com/"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/uncuarto"
+        android:layout_alignParentTop="true"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/im_uncuarto"
+        android:layout_margin="20dp"
+        android:src="@mipmap/hackbo"
+        android:layout_below="@+id/uncuarto"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="http://hackbo.co/"
+        android:id="@+id/hackbo"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:layout_below="@+id/im_uncuarto"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/im_hackbo"
+        android:src="@mipmap/uncuarto"
+        android:layout_below="@+id/hackbo"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

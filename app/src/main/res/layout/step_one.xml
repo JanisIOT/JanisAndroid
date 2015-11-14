@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/step1"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:textSize="24sp"
+
+                android:textColor="@android:color/holo_blue_dark"
+                android:id="@+id/n1"
+                android:layout_alignParentTop="true"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Encuentra a Janis en las opciones de configuración de red de tu telefono y conéctate a ella."
+                android:id="@+id/help1"
+                android:textSize="13sp"
+                android:textColor="@android:color/black"
+                android:ems="24"
+                android:layout_toRightOf="@+id/n1"
+                 />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/janis"
+                android:background="@mipmap/janis_network"
+                android:layout_below="@+id/help1"
+                android:layout_centerHorizontal="true" />
+
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/step2"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/step1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2."
+                android:textSize="24sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:id="@+id/n2"
+                android:layout_alignParentTop="true"
+                />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Al conectarte, Janis ilumina de color rojo y estará lista para que la pruebes! "
+                android:id="@+id/help2"
+                android:ems="24"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:layout_toRightOf="@+id/n2"
+                />
+
+            <RelativeLayout
+                android:layout_below="@+id/help2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <com.meridian.hackbo.ui.ColorPicker
+                android:id="@+id/picker"
+                android:layout_centerInParent="true"
+                android:layout_width="250dp"
+                android:layout_height="250dp"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/im_janis"
+                android:layout_centerInParent="true"
+                android:layout_alignBottom="@id/picker"
+                android:src="@mipmap/janis180x180"
+
+
+                 />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:id="@+id/step3"
+            android:layout_below="@+id/step2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3."
+
+                android:textSize="24sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:id="@+id/n3"
+                android:layout_alignParentTop="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"
+                android:ems="16"
+                android:text="Ahora puedes configurar a Janis en la red de tu hogar"
+                android:id="@+id/help3"
+                android:textSize="13sp"
+                android:layout_toRightOf="@+id/n3"
+                />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_step"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/arrow"
+                 />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

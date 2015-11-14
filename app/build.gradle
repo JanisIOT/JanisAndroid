@@ -1,0 +1,55 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    mavenLocal()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    maven { url 'https://repo.eclipse.org/content/repositories/californium/' }
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
+
+    defaultConfig {
+        applicationId "com.meridian.hackbo"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 3
+        versionName "1.2"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'org.eclipse.californium:californium-core:1.0.0-SNAPSHOT'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile('com.mikepenz:materialdrawer:4.4.1@aar') {
+        transitive = true
+    }
+    compile 'com.squareup:tape:1.2.3'
+    compile 'com.squareup:otto:+'
+    compile 'com.squareup:dagger:+'
+    compile 'com.google.code.gson:gson:2.1'
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') {
+        transitive = true;
+    }
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="@layout/app_bar_janis" tools:context=".JanisA"
+    android:background="@android:color/white"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/step1"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.meridian.hackbo.ui.ColorPicker
+            android:id="@+id/picker"
+            android:layout_centerInParent="true"
+            android:layout_width="250dp"
+            android:layout_height="250dp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/im_janis"
+            android:layout_centerInParent="true"
+            android:layout_alignBottom="@id/picker"
+            android:src="@mipmap/janis180x180"
+
+
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

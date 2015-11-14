@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/step1"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:textSize="24sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:id="@+id/n1"
+                android:layout_alignParentTop="true"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Para conectar a Janis a la red de tu hogar, ingresa el nombre de tu red y tu clave de acceso"
+                android:id="@+id/help1"
+                android:textSize="13sp"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@+id/n1"
+                 />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de la red"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/tv_nname"
+                android:ems="20"
+                android:layout_below="@+id/help1"
+                android:layout_centerHorizontal="true"
+                />
+
+            <EditText
+                android:id="@+id/et_nname"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="15dp"
+                android:text="UnCuartoTech"
+                android:textColor="@android:color/black"
+                android:background="@drawable/et_border"
+                android:layout_below="@+id/tv_nname"
+                android:imeOptions="actionDone"
+                android:layout_centerHorizontal="true"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Contraseña de la red"
+                android:id="@+id/tv_pass"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:ems="20"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/et_nname"
+                />
+
+            <!--android:text="RAMIREZ_DANIEL"-->
+            <!--android:text="1075656913"-->
+            <EditText
+                android:id="@+id/et_pass"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:imeOptions="actionDone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/et_border"
+                android:paddingLeft="15dp"
+
+                android:text="1/4T3ch2015"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_pass"
+                android:textCursorDrawable="@null"
+                android:layout_centerHorizontal="true"
+                android:password="true" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/step2"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/step1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2."
+                android:textSize="24sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:id="@+id/n2"
+                android:layout_alignParentTop="true"
+                />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conéctate nuevamente a:"
+                android:id="@+id/help2"
+                android:ems="24"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:layout_toRightOf="@+id/n2"
+                />
+            <TextView
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SSID"
+                android:id="@+id/tv_ssid"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="13sp"
+                android:layout_below="@+id/help2"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:id="@+id/step3"
+            android:layout_below="@+id/step2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3."
+
+                android:textSize="24sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:id="@+id/n3"
+                android:layout_alignParentTop="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"
+                android:ems="16"
+                android:text="Los lentes de Janis se pondrán de color verde cuando esté lista para ser controlada."
+                android:id="@+id/help3"
+                android:textSize="13sp"
+                android:layout_toRightOf="@+id/n3"
+                />
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_control"
+                android:text="Control Janis"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/white"
+                android:textColor="@android:color/holo_blue_bright"
+                android:layout_below="@+id/help3"
+                android:layout_alignParentRight="true"
+
+                 />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/janisGlasses"
+                android:background="@mipmap/janis180x180"
+                android:layout_below="@+id/help3"
+                 />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
